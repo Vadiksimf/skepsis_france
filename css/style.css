@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Parisienne";
+  src: url("../fonts/parisienne/Parisienne-Regular.woff") format("woff"),
+  url("../fonts/parisienne/Parisienne-Regular.ttf") format("ttf");
+  /* Modern Browsers */
+}
+
+.parisienne {
+  font-family: 'Parisienne';
+}
+
+body {
+  margin-top: 105px; 
+  overflow-x: hidden;
+  max-width:100%;
+  background-color: #fff;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #2392a6;
+  opacity: 0.9;
+  background: white; 
+  margin-right: 0px;
+}
+
+.navbar {
+  max-width:100%;
+}
+
+.navbar .nav-item {
+  font-size: 1rem;
+  padding-right: 1rem; }
+
+.navbar img{
+  max-width: 100px;
+}
+
+section:nth-of-type(3n-1) {
+  background-color: #ddd;
+}
+
+section:nth-of-type(3n+1) {
+  background-color: #cedaea;
+}
+
+section:nth-of-type(3n) {
+  background-color: #dfc5c5;
+}
+
+
+#showcase {
+  position: relative;
+  background: url("../img/pic1.jpg");
+  min-height: 800px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#showcase .primary-overlay {
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+  #about #idea {
+    display: block;
+  } 
+
+  #about p {
+    text-indent: 2em;
+  }
+
+  .about-title {
+    display: none;
+  }
+
+  .letter-by p {
+    text-align: justify;
+  }
+
+.infoheader {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+/*Team section*/
+
+#authors .col-lg-3 {
+  margin-top: 50px;
+}
+
+.leaders {
+  justify-content: center;
+  border-top: 50px solid transparent;
+  margin-top: -100px;
+  
+}
+
+#authors img {
+  margin-top: -50px; }
+
+#authors .card:hover {
+  background: #2392a6;
+  color: white; }
+
+#authors .card:hover .fab  {
+  color: #fff; }
+
+.fa-instagram {
+  color: orangered;
+  }  
+
+.team-contacts {
+  flex-direction: column;
+}
+
+#gallery .row .col-md-4 {
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+}
+
+#main-footer {
+  background-color: rgb(22,27,41) !important;
+  opacity: 0.9;
+}
+
+/* Кнопка Play*/
+
+.play {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background: #9D2929;
+  position: relative;
+
+  /* Выравнивани блока по центру */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.play-img {
+  position: relative;
+  top: 30%;
+  /*left: 30%;*/
+  transform: translateX(5px);
+}
+
+.play:before {
+  content: "";
+  width: 132px;
+  height: 132px;
+  background: #9D2929;
+  opacity: 0.5;
+  position: absolute; /* Делает элемент видимым */
+  border-radius: 50%;
+  left: -16px;
+  top: -16px;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
+}
+
+
+/* FEATURES FOR GALLERY like Paintress **************************************************/
+#gallery-figure {
+column-width: 320px;
+column-gap: 15px;
+}
+
+div#gallery-figure figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  break-inside: avoid-column;
+}
+
+div#gallery-figure figure img {
+  width: 100%; 
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+div#gallery-figure:hover figure:not(:hover) {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) { 
+#gallery-figures { column-gap: 0px; }
+#gallery-figure figure { width: 100%; }
+}
+
+/* END FEATURES FOR GALLERY *************************************************/
+
+/* Align IMG in carousel */
+.carousel-item {
+  height: 50em;
+}
+
+.carousel-item img {
+  display: block; 
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Align IMG END */
+
+#letter p {
+  text-indent: 2rem;
+}
+
+.first-video {
+  height: 30em;
+  background-image: url(../img/workshop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.second-video {
+  height: 30em;
+  background-image: url(../img/once.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* fix of anchor padding*/
+
+#about, #gallery, #video-play, #authors {
+	border-top: 100px solid transparent;
+	margin-top: -100px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+
+@media (max-width: 1559px) {
+  #about #idea {
+    display: block;
+  } 
+  #showcase {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 1030px) {
+  #showcase {
+    min-height: 500px;
+  }
+  .carousel-item {
+    height: 30em;
+  }
+} 
+  
+@media (max-width: 768px) {
+      .objectives {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .objectives p {
+        max-width: 100%;
+      }      
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .mb-resp {
+        margin-bottom: 1rem; } 
+      
+      .carousel-item {
+          height: 18em;
+        }
+
+        .carousel-item img {
+          height: 100%;
+        }
+
+        #video {
+          height: 20em;
+        }
+
+       #about #idea {
+          display: block;
+        }
+
+        .about-title {
+          display: block;
+        }
+
+        #showcase {
+          display: none;
+        }
+    }
+
+/* Footer copyright */
+
+.maded-by {
+  display: inline-block;
+  align-items: center;
+}
+ 
