@@ -35,7 +35,18 @@ body {
   max-width: 100px;
 }
 
-section:nth-of-type(3n-1) {
+.showcase-title-block {
+  display: inline-flex;
+  padding: 0 auto;
+  background-color: gray;
+  opacity:0.85;
+}
+
+.showcase-title-text {
+  color: white!important;
+}
+
+/*section:nth-of-type(3n-1) {
   background-color: #ddd;
 }
 
@@ -45,7 +56,7 @@ section:nth-of-type(3n+1) {
 
 section:nth-of-type(3n) {
   background-color: #dfc5c5;
-}
+}*/
 
 section {
   background: url(../img/bg.jpg);
@@ -68,7 +79,8 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%; 
+}
 
   #about #idea {
     display: block;
@@ -80,6 +92,12 @@ section {
 
   .about-title {
     display: none;
+  }
+
+  .objectives {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .letter-by p {
@@ -113,8 +131,6 @@ section {
 
 #authors .card:hover .fab  {
   color: #fff; }
-
-
 
 .fa-instagram {
   color: orangered;
@@ -212,13 +228,13 @@ div#gallery-figure:hover figure:not(:hover) {
 
 /* Align IMG in carousel */
 .carousel-item {
-  height: 50em;
+  height: 40em;
 }
 
 .carousel-item img {
   display: block; 
   margin: 0 auto;
-  height: 100%;
+  width: auto;
 }
 
 /* Align IMG END */
@@ -289,7 +305,7 @@ div#gallery-figure:hover figure:not(:hover) {
         margin-bottom: 1rem; } 
       
       .carousel-item {
-          height: 18em;
+          height: 25em;
         }
 
         .carousel-item img {
@@ -312,6 +328,12 @@ div#gallery-figure:hover figure:not(:hover) {
           display: none;
         }
     }
+
+  @media (max-width: 578px) {
+    .carousel-item {
+      height: 15em;
+    }
+  }
 
 /* Footer copyright */
 
