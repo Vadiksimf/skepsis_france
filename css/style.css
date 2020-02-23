@@ -37,14 +37,12 @@ body {
 
 .showcase-title-block {
   display: inline-flex;
-  padding: 0 auto;
+  padding: 0;
   background-color: gray;
   opacity:0.85;
+  border-radius: 10px;
 }
 
-.showcase-title-text {
-  color: white!important;
-}
 
 /*section:nth-of-type(3n-1) {
   background-color: #ddd;
