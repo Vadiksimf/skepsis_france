@@ -3,6 +3,7 @@
   src: url("../fonts/parisienne/Parisienne-Regular.woff") format("woff"),
   url("../fonts/parisienne/Parisienne-Regular.ttf") format("ttf");
   /* Modern Browsers */
+  font-display: block;
 }
 
 .parisienne {
