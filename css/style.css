@@ -267,6 +267,25 @@ div#gallery-figure:hover figure:not(:hover) {
 	background-clip: padding-box;
 }
 
+/* Блок картинок с организациями */
+
+.progect-founders .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progect-founders--logo {
+  margin: auto;
+  
+  min-width: 250px;
+  max-height: 150px;
+}
+
+.progect-founders--logo img {
+  margin: auto;
+  
+  max-height: 150px;
+}
 
 @media (max-width: 1559px) {
   #about #idea {
