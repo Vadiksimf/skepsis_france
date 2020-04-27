@@ -103,8 +103,7 @@ section {
     text-align: justify;
   }
 
-.infoheader {
-  width: 50%;
+.info-header {
   margin: auto;
   border-bottom: 1px #ddd solid; }
 
@@ -276,9 +275,8 @@ div#gallery-figure:hover figure:not(:hover) {
 
 .progect-founders--logo {
   margin: auto;
-  
   min-width: 250px;
-  max-height: 150px;
+  min-height: 100px;
 }
 
 .progect-founders--logo img {
