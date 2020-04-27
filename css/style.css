@@ -359,3 +359,11 @@ div#gallery-figure:hover figure:not(:hover) {
   align-items: center;
 }
  
+.maded-by a {
+  text-decoration: none;
+  color: white;
+}
+
+.maded-by a .fab {
+  color: #007bff;
+}
